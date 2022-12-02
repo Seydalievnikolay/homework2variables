@@ -5,6 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+
 
     }
     public static void task1(){
@@ -72,6 +74,20 @@ public class Main {
         int brown = classSchool * 4;
         System.out.println("В школе, где " + classSchool + " классов,нужно " + whitePaint + " банок белой краски и " + brown + " банок коричневой краски" );
 
+
+
+
+    }
+    public static void task6() {
+        System.out.println("Задача6");
+        short bananas = 5 * 80;
+        short milk = 2 * 105;
+        short iceCream = 2 * 100;
+        short egg = 4 * 70;
+        short breakfast = (short) (bananas + milk + iceCream + egg);
+        System.out.println("Вес завтрака в граммах равен " + breakfast);
+        float breakfastKilogram = breakfast / 1000f;
+        System.out.println("Вес в килограммах равен " + breakfastKilogram);
 
 
 
