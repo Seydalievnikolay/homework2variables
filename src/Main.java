@@ -14,17 +14,17 @@ public class Main {
     public static void task1(){
         System.out.println("Задача1");
         int weightSun = 1989100000;
-        System.out.println("Значение переменной int с типом weightSun равно " + weightSun);
+        System.out.println("Значение переменной weightSun с типом int равно " + weightSun);
         byte myWeight = 73;
-        System.out.println("Значение переменной byte с типом myWeight равно " + myWeight);
+        System.out.println("Значение переменной myWeight с типом byte равно " + myWeight);
         short millennium = 2022;
-        System.out.println("Значение переменной short с типом millennium равно " + millennium);
+        System.out.println("Значение переменной millennium с типом short равно " + millennium);
         long people = 80000000000000L;
-        System.out.println("Значение переменной long с типом people равно " + people);
+        System.out.println("Значение переменной people с типом long равно " + people);
         float pressure = 3.3927f;
-        System.out.println("Значение переменной float с типом pressure равно " + pressure);
+        System.out.println("Значение переменной pressure с типом float равно " + pressure);
         double temperature = -1.438;
-        System.out.println("Значение переменной double с типом temperature равно " + temperature);
+        System.out.println("Значение переменной temperature с типом double равно " + temperature);
 
 
 
@@ -55,10 +55,14 @@ public class Main {
     public static void task4(){
         System.out.println("Задача4");
         byte bottle = 16;
+        int minutes = 2;
+        int bottlePerMinutes = bottle / minutes;
         int workTime = 43200;
-        int minutes = bottle * 20;
-        System.out.println("За 20 минут машина произвела " + minutes + " штук бутылок");
-        short day = (short) (bottle * 720);
+        System.out.println("Общее время работы машины " + workTime + " часов");
+        int minutesBottle = bottlePerMinutes * 20;
+        int hour = minutesBottle*3;
+        System.out.println("За 20 минут машина произвела " + minutesBottle + " штук бутылок");
+        int day = hour * 24;
         System.out.println("За сутки машина произвела " + day + " штук бутылок");
         int threeDays = bottle * 2160;
         System.out.println("За 3 дня машина произвела " + threeDays + " штук бутылок" );
@@ -92,17 +96,19 @@ public class Main {
         System.out.println("Вес в килограммах равен " + breakfastKilogram);
 
 
-
     }
     public static void task7() {
         System.out.println("Задача7");
         short weight = 7 * 1000;
+        short lossWeight = 250;
+        short highWeight = 500;
         short gramOne = (short) (weight / 250);
         System.out.println("Если худеть по 250 грам в сутки потребуется " + gramOne);
         short gramTwo = (short) (weight / 500);
         System.out.println("Если худеть по 500 грам в сутки потребуется " + gramTwo);
-        int average = (gramOne + gramTwo) / 2;
-        System.out.println("В среднем потребуется " + average + " день");
+        double average = (lossWeight+ highWeight) / 2D;
+        double averageDay = weight / average;
+        System.out.println("В среднем потребуется " + averageDay + " день");
 
     }
     public static void task8() {
