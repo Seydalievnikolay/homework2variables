@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+        task8();
 
 
     }
@@ -91,6 +93,35 @@ public class Main {
 
 
 
+    }
+    public static void task7() {
+        System.out.println("Задача7");
+        short weight = 7 * 1000;
+        short gramOne = (short) (weight / 250);
+        System.out.println("Если худеть по 250 грам в сутки потребуется " + gramOne);
+        short gramTwo = (short) (weight / 500);
+        System.out.println("Если худеть по 500 грам в сутки потребуется " + gramTwo);
+        int average = (gramOne + gramTwo) / 2;
+        System.out.println("В среднем потребуется " + average + " день");
+
+    }
+    public static void task8() {
+        System.out.println("Задача8");
+        int masha = 67760;
+        int den = 83690;
+        int chris = 76230;
+        int mashaReceive = (masha * 10) / 100 + masha;
+        System.out.println(mashaReceive);
+        int denReceive = (den * 10) / 100 + den;
+        System.out.println(denReceive);
+        int chrisReceive = (chris * 10) / 100 +chris;
+        System.out.println(chrisReceive);
+        int mashaDifference = mashaReceive - masha;
+        System.out.println("Маша  теперь получает " + mashaReceive + " рублей. Годовой доход вырос на " + mashaDifference + " рублей");
+        int denDifference = denReceive - den;
+        System.out.println("Денис  теперь получает " + denReceive + " рублей. Годовой доход вырос на " + denDifference + " рублей");
+        int chrisDifference = chrisReceive - chris;
+        System.out.println("Кристина  теперь получает " + chrisReceive + " рублей. Годовой доход вырос на " + chrisDifference + " рублей");
     }
 
 }
