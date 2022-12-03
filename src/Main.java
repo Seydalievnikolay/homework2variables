@@ -123,11 +123,15 @@ public class Main {
         int chrisReceive = (chris * 10) / 100 +chris;
         System.out.println(chrisReceive);
         int mashaDifference = mashaReceive - masha;
-        System.out.println("Маша  теперь получает " + mashaReceive + " рублей. Годовой доход вырос на " + mashaDifference + " рублей");
+        int mashaAnnualIncome = mashaDifference * 12;
+        System.out.println("Маша  теперь получает " + mashaReceive + " рублей. Годовой доход вырос на " + mashaAnnualIncome + " рублей");
         int denDifference = denReceive - den;
-        System.out.println("Денис  теперь получает " + denReceive + " рублей. Годовой доход вырос на " + denDifference + " рублей");
+        int denAnnualIncome = denDifference * 12;
+        System.out.println("Денис  теперь получает " + denReceive + " рублей. Годовой доход вырос на " + denAnnualIncome + " рублей");
         int chrisDifference = chrisReceive - chris;
-        System.out.println("Кристина  теперь получает " + chrisReceive + " рублей. Годовой доход вырос на " + chrisDifference + " рублей");
+        int chrisAnnualIncome = chrisDifference * 12;
+        System.out.println("Кристина  теперь получает " + chrisReceive + " рублей. Годовой доход вырос на " + chrisAnnualIncome + " рублей");
+
     }
 
 }
